@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(216, 179, 187);
+}
+.first{
+    color: white;
+}
+.head2{
+    font-size: 50px;
+}
+.top{
+    display: flex;
+    justify-content: end;
+}

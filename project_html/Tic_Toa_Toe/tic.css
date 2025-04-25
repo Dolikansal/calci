@@ -1,0 +1,55 @@
+body{
+    /* background: radial-gradient(circle at top left , violet , transparent 50%); */
+    background: linear-gradient(to right, rgba(241, 110, 241, 0.5), rgba(188, 103, 248 , 0.5), blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.first,.second, .third{
+    display: flex;
+}
+.box1,.box2,.box3,.box4,.box5,.box6 ,.box7,.box8 , .box9{
+    height: 90px;
+    width: 90px;
+    background-color: azure;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.container{
+    background-color:antiquewhite;
+    padding: 25px;
+    border-radius: 10px;
+}
+.name{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    width: 300px;
+    height: 25px;
+    background-color: green;
+    color: azure;
+    border-radius: 5px;
+    border: solid;
+    border-style: groove;
+    margin-top: 5px;
+}
+.box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover ,.box7:hover,.box8:hover , .box9:hover{
+    background-color:gainsboro;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.cell {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.whole{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+.first , .third{
+    display: inline-block;
+    background-color: antiquewhite;
+    height: 30vh;
+    width: 25vw;
+}
+.second,.forth{
+    display: inline-block;
+    background-color: antiquewhite;
+    height: 30vh;
+    width: 60vw;
+}
+#forth , #second{
+    margin-left: 15vw;
+ }
+ #forth, #third{
+    margin-top: 20vw;
+ }
