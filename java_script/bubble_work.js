@@ -1,7 +1,7 @@
 document.body.addEventListener("click" , ()=>{
     const circle = document.createElement('div');
     circle.className = 'circle';
-    circle.textContent = 'kansal';
+    circle.textContent = 'Dost';
 
     const x = event.clientX;
     const y = event.clientY;

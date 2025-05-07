@@ -1,0 +1,16 @@
+{
+  "name": "parcelbasic",
+  "version": "1.0.0",
+  "description": "\"Learning React\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Doli kansal",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
