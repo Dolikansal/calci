@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.head{
+    display: flex;
+    background-color: aqua;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1.5px solid goldenrod;
+}
+.tags{
+    margin-left: 400px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+a{
+    color: black;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 8px;
+}
+.details{
+    color: bisque;
+    margin-left: 50px;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 45px;
+    cursor: pointer;
+}
+.first_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.resume{
+    margin-top: 75px;
+    margin-left: 75px;
+    font-size: medium;
+    font-weight: 700px;
+    background-color: aqua;
+    border-radius: 3px;
+    width: 130px;
+    height: 30px;
+    border:none;
+    border: 1.5px solid whitesmoke;
+    cursor: pointer;
+}
+.icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px; 
+    margin-left: 60px;
+}
+
+.icons a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color:antiquewhite;
+}
+.image2{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 2.5px solid whitesmoke;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+.about_me{
+    color: antiquewhite;
+    margin-left: 50px;
+}
+.about_me h1{
+    margin-bottom: 50px;
+    font-weight: bolder;
+    font-size:xx-large;
+}
+.about_me button{
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 30px;
+    width: 105px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 700px;
+    border: 1.5px solid whitesmoke;
+    cursor: pointer;
+}
+.top{
+    color: antiquewhite;
+    margin-bottom: 160px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    color: white;
+    margin-left: 50px;
+}
+.top h1{
+    font-size:xx-large;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.form input{
+    height: 23px;
+    width: 340px;
+    border-radius: 2px;
+    border: none;
+}
+#submit{
+    height: 28px;
+    width: 100px;
+    font-size:medium;
+    font-weight: 500;
+    background-color: aqua;
+    border: none;
+    border: 2px solid whitesmoke;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.icons_contact{
+    margin-top: 70px;
+    display: flex;
+    gap: 15px; 
+    margin-left: 5px;
+}
+.icons_contact a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color:antiquewhite;
+}
+.mes{
+    vertical-align: top;
+}
+.skills { 
+    width: 600px;
+    margin: 60px;
+    color:antiquewhite;
+    padding: 20px;
+    box-shadow: 10px 20px 25px 15px rgba(45, 178, 249, 0.25), 0 10px 10px rgba(8, 142, 226, 0.22);
+    margin-top: 10px;
+}
+.sk {
+    height: auto; 
+    padding: 50px 0; 
+    min-height: 100vh; 
+}
+.sk h1 {
+    margin-left: 420px;
+    text-align: center; 
+    font-size: xx-large;
+    font-weight: bolder;
+    color: antiquewhite;
+    margin-bottom: 30px;
+}
+.skills li {
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 10px;
+    width: 400px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span {
+    height: 20px;
+    float: left;
+    background-color:rgb(66, 223, 247);
+}
+.html , .cpp , .c , .python , .DSA{
+    width: 80%;
+    animation: html 3s;
+}
+.css , .java , .oops{
+    width: 75%;
+    animation: css 3s;
+}
+.javascript{
+    width: 70%;
+    animation: css 3s;
+}
+.pro1 {
+    color: antiquewhite;
+    display: inline;
+}
+
+#leet {
+    color: antiquewhite;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 20px; 
+}
+
+.leetcod { 
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+.gfg{
+    margin-top: 10px;
+}
