@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circle{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;;
+    text-align: center;
+    background-color: blue;
+    animation: grow 5s forwards;
+    opacity: 1;
+    color: palevioletred;
+    font-style: italic;
+}
+@keyframes grow {
+    from {
+        transform: scale(1);
+        opacity: 2;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

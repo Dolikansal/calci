@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: papayawhip;
+    border-radius: 5px;
+    padding:15px;
+}
+.cal  , .res , .res2 , .res3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+}
+button{
+    font-size: large;
+    border-style: groove;
+    border-radius: 5px;
+}
+.res{
+    margin-top: 15px;
+}

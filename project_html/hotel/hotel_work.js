@@ -1,0 +1,1513 @@
+const  restaurants = [
+    {
+      "image": "fourth",
+      "rest_name": "The Grand Feast",
+      "rating": 2,
+      "food": "Nihari",
+      "price": 1570,
+      "location": "Mehrauli Archaeological Park",
+      "distance": 3,
+      "distance_from_customer": "2.3",
+      "offer": 28,
+      "alchol": false,
+      "open_time": 0,
+      "close_time": 12
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Saffron Dining",
+      "rating": 1,
+      "food": "Shahi Tukda",
+      "price": 290,
+      "location": "Rashtrapati Bhavan",
+      "distance": 1,
+      "distance_from_customer": "1.7",
+      "offer": 21,
+      "alchol": false,
+      "open_time": 7,
+      "close_time": 19
+    },
+    {
+      "image": "nine",
+      "rest_name": "Royal Treat",
+      "rating": 1,
+      "food": "Chole Bhature",
+      "price": 2085,
+      "location": "Qutub Minar",
+      "distance": 2,
+      "distance_from_customer": "1.0",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 2,
+      "close_time": 14
+    },
+    {
+      "image": "First",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 3,
+      "food": "Matka Kulfi",
+      "price": 856,
+      "location": "ISKCON Temple",
+      "distance": 1,
+      "distance_from_customer": "3.7",
+      "offer": 0,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "second",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 1,
+      "food": "Chur Chur Naan",
+      "price": 126,
+      "location": "Chandni Chowk",
+      "distance": 3,
+      "distance_from_customer": "4.3",
+      "offer": 15,
+      "alchol": false,
+      "open_time": 19,
+      "close_time": 7
+    },
+    {
+      "image": "second",
+      "rest_name": "Haveli Restaurant",
+      "rating": 5,
+      "food": "Bedmi Poori",
+      "price": 877,
+      "location": "Raj Ghat",
+      "distance": 3,
+      "distance_from_customer": "4.3",
+      "offer": 13,
+      "alchol": false,
+      "open_time": 20,
+      "close_time": 8
+    },
+    {
+      "image": "third",
+      "rest_name": "The Food Factory",
+      "rating": 3,
+      "food": "Tandoori Chicken",
+      "price": 2003,
+      "location": "Connaught Place",
+      "distance": 0,
+      "distance_from_customer": "2.4",
+      "offer": 11,
+      "alchol": false,
+      "open_time": 12,
+      "close_time": 0
+    },
+    {
+      "image": "sixth",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 1,
+      "food": "Dal Makhani",
+      "price": 427,
+      "location": "Safdarjung Tomb",
+      "distance": 1,
+      "distance_from_customer": "3.0",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 5,
+      "close_time": 17
+    },
+    {
+      "image": "third",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 2,
+      "food": "Kebabs",
+      "price": 779,
+      "location": "Khan Market",
+      "distance": 1,
+      "distance_from_customer": "4.3",
+      "offer": 21,
+      "alchol": false,
+      "open_time": 12,
+      "close_time": 0
+    },
+    {
+      "image": "fourth",
+      "rest_name": "Saffron Dining",
+      "rating": 3,
+      "food": "Kulfi",
+      "price": 305,
+      "location": "National Museum",
+      "distance": 2,
+      "distance_from_customer": "1.5",
+      "offer": 4,
+      "alchol": false,
+      "open_time": 21,
+      "close_time": 9
+    },
+    {
+      "image": "nine",
+      "rest_name": "Taste of India",
+      "rating": 5,
+      "food": "Aloo Tikki",
+      "price": 710,
+      "location": "Connaught Place",
+      "distance": 1,
+      "distance_from_customer": "1.6",
+      "offer": 20,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "fourth",
+      "rest_name": "FRESH BOWL",
+      "rating": 2,
+      "food": "Rabri Falooda",
+      "price": 761,
+      "location": "Garden of Five Senses",
+      "distance": 1,
+      "distance_from_customer": "3.8",
+      "offer": 22,
+      "alchol": false,
+      "open_time": 3,
+      "close_time": 15
+    },
+    {
+      "image": "First",
+      "rest_name": "Desi Tadka",
+      "rating": 4,
+      "food": "Aloo Tikki",
+      "price": 1024,
+      "location": "Nehru Planetarium",
+      "distance": 0,
+      "distance_from_customer": "1.4",
+      "offer": 29,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 1,
+      "food": "Nihari",
+      "price": 969,
+      "location": "Dilli Haat",
+      "distance": 2,
+      "distance_from_customer": "3.0",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "nine",
+      "rest_name": "Biryani House",
+      "rating": 3,
+      "food": "Nihari",
+      "price": 1689,
+      "location": "Garden of Five Senses",
+      "distance": 3,
+      "distance_from_customer": "4.9",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 0,
+      "close_time": 12
+    },
+    {
+      "image": "second",
+      "rest_name": "FRESH BOWL",
+      "rating": 4,
+      "food": "Kebabs",
+      "price": 971,
+      "location": "Safdarjung Tomb",
+      "distance": 2,
+      "distance_from_customer": "1.1",
+      "offer": 11,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 1,
+      "food": "Shahi Tukda",
+      "price": 269,
+      "location": "Jantar Mantar",
+      "distance": 0,
+      "distance_from_customer": "3.8",
+      "offer": 27,
+      "alchol": false,
+      "open_time": 22,
+      "close_time": 10
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Utsav Restaurant",
+      "rating": 1,
+      "food": "Butter Chicken",
+      "price": 2335,
+      "location": "Lotus Temple",
+      "distance": 3,
+      "distance_from_customer": "3.5",
+      "offer": 17,
+      "alchol": false,
+      "open_time": 22,
+      "close_time": 10
+    },
+    {
+      "image": "third",
+      "rest_name": "Chatori Gali",
+      "rating": 2,
+      "food": "Street-style Chowmein",
+      "price": 2197,
+      "location": "Red Fort",
+      "distance": 2,
+      "distance_from_customer": "4.2",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 12,
+      "close_time": 0
+    },
+    {
+      "image": "second",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 1,
+      "food": "Samosa",
+      "price": 1671,
+      "location": "Purana Qila",
+      "distance": 0,
+      "distance_from_customer": "3.9",
+      "offer": 8,
+      "alchol": false,
+      "open_time": 4,
+      "close_time": 16
+    },
+    {
+      "image": "third",
+      "rest_name": "Royal Treat",
+      "rating": 4,
+      "food": "Kebabs",
+      "price": 1744,
+      "location": "Raj Ghat",
+      "distance": 3,
+      "distance_from_customer": "2.1",
+      "offer": 27,
+      "alchol": false,
+      "open_time": 1,
+      "close_time": 13
+    },
+    {
+      "image": "sixth",
+      "rest_name": "Flavors of Punjab",
+      "rating": 5,
+      "food": "Shahi Tukda",
+      "price": 1069,
+      "location": "Rashtrapati Bhavan",
+      "distance": 1,
+      "distance_from_customer": "2.0",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 3,
+      "close_time": 15
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Royal Treat",
+      "rating": 2,
+      "food": "Malai Chaap",
+      "price": 1418,
+      "location": "Rashtrapati Bhavan",
+      "distance": 2,
+      "distance_from_customer": "4.9",
+      "offer": 7,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "second",
+      "rest_name": "Tandoori Junction",
+      "rating": 4,
+      "food": "Paneer Tikka",
+      "price": 706,
+      "location": "Hauz Khas Village",
+      "distance": 2,
+      "distance_from_customer": "2.6",
+      "offer": 5,
+      "alchol": false,
+      "open_time": 2,
+      "close_time": 14
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Flavors of Punjab",
+      "rating": 1,
+      "food": "Kathi Rolls",
+      "price": 821,
+      "location": "Rashtrapati Bhavan",
+      "distance": 2,
+      "distance_from_customer": "1.7",
+      "offer": 23,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "second",
+      "rest_name": "Flavors of Punjab",
+      "rating": 1,
+      "food": "Ram Ladoo",
+      "price": 476,
+      "location": "Jama Masjid",
+      "distance": 3,
+      "distance_from_customer": "1.3",
+      "offer": 23,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "nine",
+      "rest_name": "Biryani House",
+      "rating": 1,
+      "food": "Kulfi",
+      "price": 1961,
+      "location": "National Museum",
+      "distance": 1,
+      "distance_from_customer": "3.0",
+      "offer": 13,
+      "alchol": false,
+      "open_time": 1,
+      "close_time": 13
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Urban Bites",
+      "rating": 1,
+      "food": "Dal Makhani",
+      "price": 511,
+      "location": "Lotus Temple",
+      "distance": 2,
+      "distance_from_customer": "1.3",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 13,
+      "close_time": 1
+    },
+    {
+      "image": "nine",
+      "rest_name": "Curry Culture",
+      "rating": 3,
+      "food": "Dahi Bhalla",
+      "price": 1251,
+      "location": "Lodhi Garden",
+      "distance": 2,
+      "distance_from_customer": "1.5",
+      "offer": 28,
+      "alchol": false,
+      "open_time": 18,
+      "close_time": 6
+    },
+    {
+      "image": "Eigth",
+      "rest_name": "Haveli Restaurant",
+      "rating": 5,
+      "food": "Matka Kulfi",
+      "price": 1176,
+      "location": "Jama Masjid",
+      "distance": 0,
+      "distance_from_customer": "3.7",
+      "offer": 1,
+      "alchol": false,
+      "open_time": 18,
+      "close_time": 6
+    },
+    {
+      "image": "Eigth",
+      "rest_name": "Desi Tadka",
+      "rating": 2,
+      "food": "Fruit Chaat",
+      "price": 2221,
+      "location": "Humayun's Tomb",
+      "distance": 0,
+      "distance_from_customer": "4.5",
+      "offer": 5,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "third",
+      "rest_name": "Zaika Restaurant",
+      "rating": 3,
+      "food": "Gol Gappe (Pani Puri)",
+      "price": 2228,
+      "location": "Jama Masjid",
+      "distance": 1,
+      "distance_from_customer": "1.8",
+      "offer": 28,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "First",
+      "rest_name": "Biryani House",
+      "rating": 5,
+      "food": "Matka Kulfi",
+      "price": 264,
+      "location": "Humayun's Tomb",
+      "distance": 1,
+      "distance_from_customer": "4.4",
+      "offer": 14,
+      "alchol": false,
+      "open_time": 21,
+      "close_time": 9
+    },
+    {
+      "image": "second",
+      "rest_name": "Tandoori Junction",
+      "rating": 1,
+      "food": "Rabri Falooda",
+      "price": 500,
+      "location": "Purana Qila",
+      "distance": 2,
+      "distance_from_customer": "2.6",
+      "offer": 9,
+      "alchol": false,
+      "open_time": 12,
+      "close_time": 0
+    },
+    {
+      "image": "First",
+      "rest_name": "Royal Treat",
+      "rating": 2,
+      "food": "Butter Chicken",
+      "price": 171,
+      "location": "Hauz Khas Village",
+      "distance": 0,
+      "distance_from_customer": "1.2",
+      "offer": 5,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "nine",
+      "rest_name": "Biryani House",
+      "rating": 4,
+      "food": "Shahi Tukda",
+      "price": 1956,
+      "location": "Agrasen ki Baoli",
+      "distance": 0,
+      "distance_from_customer": "3.4",
+      "offer": 8,
+      "alchol": false,
+      "open_time": 2,
+      "close_time": 14
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Saffron Dining",
+      "rating": 3,
+      "food": "Jalebi",
+      "price": 592,
+      "location": "Qutub Minar",
+      "distance": 2,
+      "distance_from_customer": "3.3",
+      "offer": 19,
+      "alchol": false,
+      "open_time": 12,
+      "close_time": 0
+    },
+    {
+      "image": "sixth",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 1,
+      "food": "Samosa",
+      "price": 935,
+      "location": "Hauz Khas Village",
+      "distance": 0,
+      "distance_from_customer": "4.8",
+      "offer": 20,
+      "alchol": false,
+      "open_time": 22,
+      "close_time": 10
+    },
+    {
+      "image": "nine",
+      "rest_name": "Taste of India",
+      "rating": 3,
+      "food": "Fruit Chaat",
+      "price": 1105,
+      "location": "Dilli Haat",
+      "distance": 0,
+      "distance_from_customer": "1.6",
+      "offer": 20,
+      "alchol": false,
+      "open_time": 7,
+      "close_time": 19
+    },
+    {
+      "image": "First",
+      "rest_name": "FRESH BOWL",
+      "rating": 3,
+      "food": "Chole Bhature",
+      "price": 155,
+      "location": "National Museum",
+      "distance": 1,
+      "distance_from_customer": "4.9",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 6,
+      "close_time": 18
+    },
+    {
+      "image": "nine",
+      "rest_name": "Sindhi Misthan",
+      "rating": 2,
+      "food": "Tandoori Chicken",
+      "price": 1513,
+      "location": "Purana Qila",
+      "distance": 3,
+      "distance_from_customer": "2.7",
+      "offer": 9,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "third",
+      "rest_name": "Urban Bites",
+      "rating": 2,
+      "food": "Chur Chur Naan",
+      "price": 224,
+      "location": "National Museum",
+      "distance": 2,
+      "distance_from_customer": "2.0",
+      "offer": 7,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Flavors of Punjab",
+      "rating": 4,
+      "food": "Matka Kulfi",
+      "price": 684,
+      "location": "Lodhi Garden",
+      "distance": 0,
+      "distance_from_customer": "3.7",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 4,
+      "close_time": 16
+    },
+    {
+      "image": "First",
+      "rest_name": "Zaika Restaurant",
+      "rating": 2,
+      "food": "Butter Chicken",
+      "price": 1850,
+      "location": "Qutub Minar",
+      "distance": 1,
+      "distance_from_customer": "4.2",
+      "offer": 27,
+      "alchol": false,
+      "open_time": 11,
+      "close_time": 23
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Spice Hub",
+      "rating": 1,
+      "food": "Kebabs",
+      "price": 1816,
+      "location": "Lotus Temple",
+      "distance": 2,
+      "distance_from_customer": "1.6",
+      "offer": 10,
+      "alchol": false,
+      "open_time": 20,
+      "close_time": 8
+    },
+    {
+      "image": "seventh",
+      "rest_name": "The Grand Feast",
+      "rating": 2,
+      "food": "Dal Makhani",
+      "price": 1539,
+      "location": "Dilli Haat",
+      "distance": 2,
+      "distance_from_customer": "3.4",
+      "offer": 5,
+      "alchol": false,
+      "open_time": 4,
+      "close_time": 16
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Desi Tadka",
+      "rating": 1,
+      "food": "Matka Kulfi",
+      "price": 805,
+      "location": "Lodhi Garden",
+      "distance": 0,
+      "distance_from_customer": "1.4",
+      "offer": 24,
+      "alchol": false,
+      "open_time": 22,
+      "close_time": 10
+    },
+    {
+      "image": "sixth",
+      "rest_name": "FRESH BOWL",
+      "rating": 4,
+      "food": "Street-style Chowmein",
+      "price": 1130,
+      "location": "Hauz Khas Village",
+      "distance": 2,
+      "distance_from_customer": "2.6",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 0,
+      "close_time": 12
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Zaika Restaurant",
+      "rating": 3,
+      "food": "Paneer Tikka",
+      "price": 1459,
+      "location": "Connaught Place",
+      "distance": 0,
+      "distance_from_customer": "1.5",
+      "offer": 13,
+      "alchol": false,
+      "open_time": 20,
+      "close_time": 8
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 1,
+      "food": "Bhalla Papdi",
+      "price": 1122,
+      "location": "Mehrauli Archaeological Park",
+      "distance": 2,
+      "distance_from_customer": "3.6",
+      "offer": 0,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "third",
+      "rest_name": "Taste of India",
+      "rating": 1,
+      "food": "Ram Ladoo",
+      "price": 2469,
+      "location": "Agrasen ki Baoli",
+      "distance": 1,
+      "distance_from_customer": "4.4",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 21,
+      "close_time": 9
+    },
+    {
+      "image": "sixth",
+      "rest_name": "Flavors of Punjab",
+      "rating": 1,
+      "food": "Aloo Tikki",
+      "price": 424,
+      "location": "National Museum",
+      "distance": 3,
+      "distance_from_customer": "1.2",
+      "offer": 14,
+      "alchol": false,
+      "open_time": 21,
+      "close_time": 9
+    },
+    {
+      "image": "sixth",
+      "rest_name": "Utsav Restaurant",
+      "rating": 2,
+      "food": "Gol Gappe (Pani Puri)",
+      "price": 2400,
+      "location": "Rashtrapati Bhavan",
+      "distance": 2,
+      "distance_from_customer": "1.4",
+      "offer": 8,
+      "alchol": false,
+      "open_time": 0,
+      "close_time": 12
+    },
+    {
+      "image": "sixth",
+      "rest_name": "Flavors of Punjab",
+      "rating": 1,
+      "food": "Dahi Bhalla",
+      "price": 1116,
+      "location": "Hauz Khas Village",
+      "distance": 1,
+      "distance_from_customer": "4.3",
+      "offer": 14,
+      "alchol": false,
+      "open_time": 11,
+      "close_time": 23
+    },
+    {
+      "image": "First",
+      "rest_name": "The Grand Feast",
+      "rating": 3,
+      "food": "Samosa",
+      "price": 1677,
+      "location": "Garden of Five Senses",
+      "distance": 1,
+      "distance_from_customer": "1.9",
+      "offer": 21,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "nine",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 3,
+      "food": "Tandoori Chicken",
+      "price": 692,
+      "location": "Connaught Place",
+      "distance": 0,
+      "distance_from_customer": "3.7",
+      "offer": 2,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Spice Hub",
+      "rating": 1,
+      "food": "Momos",
+      "price": 1339,
+      "location": "Safdarjung Tomb",
+      "distance": 0,
+      "distance_from_customer": "4.4",
+      "offer": 13,
+      "alchol": false,
+      "open_time": 1,
+      "close_time": 13
+    },
+    {
+      "image": "seventh",
+      "rest_name": "FRESH BOWL",
+      "rating": 3,
+      "food": "Chole Bhature",
+      "price": 1948,
+      "location": "Mehrauli Archaeological Park",
+      "distance": 0,
+      "distance_from_customer": "2.4",
+      "offer": 29,
+      "alchol": false,
+      "open_time": 2,
+      "close_time": 14
+    },
+    {
+      "image": "third",
+      "rest_name": "Flavors of Punjab",
+      "rating": 3,
+      "food": "Butter Chicken",
+      "price": 1057,
+      "location": "Garden of Five Senses",
+      "distance": 2,
+      "distance_from_customer": "4.2",
+      "offer": 14,
+      "alchol": false,
+      "open_time": 8,
+      "close_time": 20
+    },
+    {
+      "image": "fourth",
+      "rest_name": "Desi Tadka",
+      "rating": 4,
+      "food": "Matka Kulfi",
+      "price": 1317,
+      "location": "Purana Qila",
+      "distance": 0,
+      "distance_from_customer": "1.4",
+      "offer": 15,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "tenth",
+      "rest_name": "FRESH BOWL",
+      "rating": 4,
+      "food": "Jalebi",
+      "price": 973,
+      "location": "Khan Market",
+      "distance": 3,
+      "distance_from_customer": "3.9",
+      "offer": 25,
+      "alchol": false,
+      "open_time": 2,
+      "close_time": 14
+    },
+    {
+      "image": "third",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 2,
+      "food": "Kebabs",
+      "price": 1570,
+      "location": "Humayun's Tomb",
+      "distance": 0,
+      "distance_from_customer": "2.8",
+      "offer": 4,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "second",
+      "rest_name": "Utsav Restaurant",
+      "rating": 3,
+      "food": "Aloo Tikki",
+      "price": 315,
+      "location": "Jantar Mantar",
+      "distance": 0,
+      "distance_from_customer": "1.5",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 6,
+      "close_time": 18
+    },
+    {
+      "image": "nine",
+      "rest_name": "Zaika Restaurant",
+      "rating": 5,
+      "food": "Bedmi Poori",
+      "price": 1980,
+      "location": "Raj Ghat",
+      "distance": 2,
+      "distance_from_customer": "1.6",
+      "offer": 12,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Taste of India",
+      "rating": 5,
+      "food": "Kulfi",
+      "price": 2052,
+      "location": "Humayun's Tomb",
+      "distance": 0,
+      "distance_from_customer": "2.3",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "third",
+      "rest_name": "Zaika Restaurant",
+      "rating": 5,
+      "food": "Chur Chur Naan",
+      "price": 557,
+      "location": "Connaught Place",
+      "distance": 1,
+      "distance_from_customer": "2.0",
+      "offer": 1,
+      "alchol": false,
+      "open_time": 18,
+      "close_time": 6
+    },
+    {
+      "image": "First",
+      "rest_name": "FRESH BOWL",
+      "rating": 2,
+      "food": "Aloo Tikki",
+      "price": 1006,
+      "location": "Purana Qila",
+      "distance": 1,
+      "distance_from_customer": "1.1",
+      "offer": 18,
+      "alchol": false,
+      "open_time": 7,
+      "close_time": 19
+    },
+    {
+      "image": "nine",
+      "rest_name": "The Food Factory",
+      "rating": 4,
+      "food": "Papdi Chaat",
+      "price": 603,
+      "location": "Chandni Chowk",
+      "distance": 3,
+      "distance_from_customer": "1.8",
+      "offer": 12,
+      "alchol": false,
+      "open_time": 6,
+      "close_time": 18
+    },
+    {
+      "image": "First",
+      "rest_name": "Sindhi Misthan",
+      "rating": 2,
+      "food": "Malai Chaap",
+      "price": 1325,
+      "location": "Safdarjung Tomb",
+      "distance": 1,
+      "distance_from_customer": "2.7",
+      "offer": 12,
+      "alchol": false,
+      "open_time": 23,
+      "close_time": 11
+    },
+    {
+      "image": "nine",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 2,
+      "food": "Fruit Chaat",
+      "price": 2124,
+      "location": "Jama Masjid",
+      "distance": 3,
+      "distance_from_customer": "4.4",
+      "offer": 19,
+      "alchol": false,
+      "open_time": 3,
+      "close_time": 15
+    },
+    {
+      "image": "tenth",
+      "rest_name": "The Grand Feast",
+      "rating": 2,
+      "food": "Gol Gappe (Pani Puri)",
+      "price": 2471,
+      "location": "Connaught Place",
+      "distance": 1,
+      "distance_from_customer": "3.2",
+      "offer": 14,
+      "alchol": false,
+      "open_time": 5,
+      "close_time": 17
+    },
+    {
+      "image": "seventh",
+      "rest_name": "The Grand Feast",
+      "rating": 3,
+      "food": "Lassi",
+      "price": 2395,
+      "location": "Khan Market",
+      "distance": 2,
+      "distance_from_customer": "1.0",
+      "offer": 24,
+      "alchol": false,
+      "open_time": 2,
+      "close_time": 14
+    },
+    {
+      "image": "seventh",
+      "rest_name": "FRESH BOWL",
+      "rating": 5,
+      "food": "Dahi Bhalla",
+      "price": 309,
+      "location": "National Museum",
+      "distance": 0,
+      "distance_from_customer": "1.1",
+      "offer": 2,
+      "alchol": false,
+      "open_time": 19,
+      "close_time": 7
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 4,
+      "food": "Tandoori Chicken",
+      "price": 988,
+      "location": "Purana Qila",
+      "distance": 0,
+      "distance_from_customer": "4.1",
+      "offer": 12,
+      "alchol": false,
+      "open_time": 1,
+      "close_time": 13
+    },
+    {
+      "image": "second",
+      "rest_name": "Urban Bites",
+      "rating": 3,
+      "food": "Kachori",
+      "price": 2162,
+      "location": "Qutub Minar",
+      "distance": 1,
+      "distance_from_customer": "4.1",
+      "offer": 10,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "fourth",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 1,
+      "food": "Butter Chicken",
+      "price": 486,
+      "location": "Raj Ghat",
+      "distance": 3,
+      "distance_from_customer": "1.9",
+      "offer": 9,
+      "alchol": false,
+      "open_time": 14,
+      "close_time": 2
+    },
+    {
+      "image": "sixth",
+      "rest_name": "FRESH BOWL",
+      "rating": 1,
+      "food": "Kachori",
+      "price": 576,
+      "location": "ISKCON Temple",
+      "distance": 2,
+      "distance_from_customer": "2.0",
+      "offer": 9,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Zaika Restaurant",
+      "rating": 2,
+      "food": "Rabri Falooda",
+      "price": 2495,
+      "location": "Red Fort",
+      "distance": 0,
+      "distance_from_customer": "4.0",
+      "offer": 26,
+      "alchol": false,
+      "open_time": 19,
+      "close_time": 7
+    },
+    {
+      "image": "seventh",
+      "rest_name": "FRESH BOWL",
+      "rating": 3,
+      "food": "Kebabs",
+      "price": 1320,
+      "location": "Gurudwara Bangla Sahib",
+      "distance": 1,
+      "distance_from_customer": "1.7",
+      "offer": 11,
+      "alchol": false,
+      "open_time": 20,
+      "close_time": 8
+    },
+    {
+      "image": "First",
+      "rest_name": "Urban Bites",
+      "rating": 1,
+      "food": "Jalebi",
+      "price": 314,
+      "location": "Jantar Mantar",
+      "distance": 0,
+      "distance_from_customer": "2.5",
+      "offer": 3,
+      "alchol": false,
+      "open_time": 3,
+      "close_time": 15
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Tandoori Junction",
+      "rating": 1,
+      "food": "Kulfi",
+      "price": 435,
+      "location": "Humayun's Tomb",
+      "distance": 1,
+      "distance_from_customer": "3.2",
+      "offer": 8,
+      "alchol": false,
+      "open_time": 10,
+      "close_time": 22
+    },
+    {
+      "image": "third",
+      "rest_name": "Saffron Dining",
+      "rating": 3,
+      "food": "Papdi Chaat",
+      "price": 2338,
+      "location": "Lotus Temple",
+      "distance": 3,
+      "distance_from_customer": "4.3",
+      "offer": 18,
+      "alchol": false,
+      "open_time": 12,
+      "close_time": 0
+    },
+    {
+      "image": "third",
+      "rest_name": "Chatori Gali",
+      "rating": 5,
+      "food": "Chur Chur Naan",
+      "price": 2021,
+      "location": "Lodhi Garden",
+      "distance": 0,
+      "distance_from_customer": "1.7",
+      "offer": 18,
+      "alchol": false,
+      "open_time": 5,
+      "close_time": 17
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Utsav Restaurant",
+      "rating": 2,
+      "food": "Butter Chicken",
+      "price": 1556,
+      "location": "Agrasen ki Baoli",
+      "distance": 3,
+      "distance_from_customer": "4.2",
+      "offer": 5,
+      "alchol": false,
+      "open_time": 6,
+      "close_time": 18
+    },
+    {
+      "image": "fourth",
+      "rest_name": "Saffron Dining",
+      "rating": 4,
+      "food": "Nihari",
+      "price": 839,
+      "location": "Agrasen ki Baoli",
+      "distance": 0,
+      "distance_from_customer": "1.1",
+      "offer": 23,
+      "alchol": false,
+      "open_time": 4,
+      "close_time": 16
+    },
+    {
+      "image": "sixth",
+      "rest_name": "FRESH BOWL",
+      "rating": 5,
+      "food": "Samosa",
+      "price": 1220,
+      "location": "Garden of Five Senses",
+      "distance": 1,
+      "distance_from_customer": "1.5",
+      "offer": 9,
+      "alchol": false,
+      "open_time": 16,
+      "close_time": 4
+    },
+    {
+      "image": "fourth",
+      "rest_name": "Biryani House",
+      "rating": 3,
+      "food": "Gol Gappe (Pani Puri)",
+      "price": 692,
+      "location": "Rashtrapati Bhavan",
+      "distance": 1,
+      "distance_from_customer": "1.6",
+      "offer": 9,
+      "alchol": false,
+      "open_time": 13,
+      "close_time": 1
+    },
+    {
+      "image": "second",
+      "rest_name": "Taste of India",
+      "rating": 1,
+      "food": "Bedmi Poori",
+      "price": 798,
+      "location": "Lodhi Garden",
+      "distance": 1,
+      "distance_from_customer": "1.6",
+      "offer": 10,
+      "alchol": false,
+      "open_time": 11,
+      "close_time": 23
+    },
+    {
+      "image": "fifth",
+      "rest_name": "Chatori Gali",
+      "rating": 2,
+      "food": "Dal Makhani",
+      "price": 1027,
+      "location": "Red Fort",
+      "distance": 3,
+      "distance_from_customer": "4.3",
+      "offer": 21,
+      "alchol": false,
+      "open_time": 20,
+      "close_time": 8
+    },
+    {
+      "image": "nine",
+      "rest_name": "Utsav Restaurant",
+      "rating": 4,
+      "food": "Kathi Rolls",
+      "price": 319,
+      "location": "Raj Ghat",
+      "distance": 0,
+      "distance_from_customer": "2.6",
+      "offer": 23,
+      "alchol": false,
+      "open_time": 21,
+      "close_time": 9
+    },
+    {
+      "image": "sixth",
+      "rest_name": "The Grand Feast",
+      "rating": 4,
+      "food": "Dahi Bhalla",
+      "price": 2123,
+      "location": "Lodhi Garden",
+      "distance": 3,
+      "distance_from_customer": "4.1",
+      "offer": 17,
+      "alchol": false,
+      "open_time": 9,
+      "close_time": 21
+    },
+    {
+      "image": "First",
+      "rest_name": "Swag Restaurant Lounge Cafe",
+      "rating": 3,
+      "food": "Paneer Tikka",
+      "price": 2372,
+      "location": "Garden of Five Senses",
+      "distance": 1,
+      "distance_from_customer": "3.3",
+      "offer": 8,
+      "alchol": false,
+      "open_time": 15,
+      "close_time": 3
+    },
+    {
+      "image": "seventh",
+      "rest_name": "Desi Tadka",
+      "rating": 1,
+      "food": "Chole Bhature",
+      "price": 624,
+      "location": "Garden of Five Senses",
+      "distance": 3,
+      "distance_from_customer": "4.4",
+      "offer": 19,
+      "alchol": false,
+      "open_time": 10,
+      "close_time": 22
+    },
+    {
+      "image": "fourth",
+      "rest_name": "The Grand Feast",
+      "rating": 1,
+      "food": "Malai Chaap",
+      "price": 436,
+      "location": "Jantar Mantar",
+      "distance": 2,
+      "distance_from_customer": "1.9",
+      "offer": 6,
+      "alchol": false,
+      "open_time": 17,
+      "close_time": 5
+    },
+    {
+      "image": "tenth",
+      "rest_name": "Biryani House",
+      "rating": 3,
+      "food": "Tandoori Chicken",
+      "price": 541,
+      "location": "Nehru Planetarium",
+      "distance": 1,
+      "distance_from_customer": "3.6",
+      "offer": 2,
+      "alchol": false,
+      "open_time": 23,
+      "close_time": 11
+    },
+    {
+      "image": "fourth",
+      "rest_name": "Tandoori Junction",
+      "rating": 1,
+      "food": "Lassi",
+      "price": 1843,
+      "location": "Purana Qila",
+      "distance": 0,
+      "distance_from_customer": "2.7",
+      "offer": 28,
+      "alchol": false,
+      "open_time": 20,
+      "close_time": 8
+    },
+    {
+      "image": "nine",
+      "rest_name": "Khalsa Veg Soya Chaap",
+      "rating": 5,
+      "food": "Samosa",
+      "price": 2025,
+      "location": "Lodhi Garden",
+      "distance": 1,
+      "distance_from_customer": "2.4",
+      "offer": 16,
+      "alchol": false,
+      "open_time": 5,
+      "close_time": 17
+    },
+    {
+      "image": "nine",
+      "rest_name": "Tandoori Junction",
+      "rating": 5,
+      "food": "Dal Makhani",
+      "price": 2044,
+      "location": "Humayun's Tomb",
+      "distance": 2,
+      "distance_from_customer": "1.6",
+      "offer": 21,
+      "alchol": false,
+      "open_time": 1,
+      "close_time": 13
+    },
+    {
+      "image": "third",
+      "rest_name": "The Food Factory",
+      "rating": 2,
+      "food": "Paranthas",
+      "price": 359,
+      "location": "Gurudwara Bangla Sahib",
+      "distance": 3,
+      "distance_from_customer": "2.1",
+      "offer": 19,
+      "alchol": false,
+      "open_time": 13,
+      "close_time": 1
+    },
+    {
+      "image": "third",
+      "rest_name": "Curry Culture",
+      "rating": 3,
+      "food": "Fruit Chaat",
+      "price": 566,
+      "location": "Akshardham Temple",
+      "distance": 2,
+      "distance_from_customer": "3.6",
+      "offer": 19,
+      "alchol": false,
+      "open_time": 17,
+      "close_time": 5
+    }
+  ]
+
+  function getrestaurant(resturants){
+    const root = document.getElementById('root');
+    resturants.forEach(restaurant => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        const image = document.createElement('img');
+        image.src = `images/${restaurant.image}.jpeg`;
+
+        const Card_content = document.createElement('div');
+        Card_content.classList.add('card-content');
+
+        const Card_header = document.createElement('div');
+       Card_header.classList.add('card-header');
+
+       const h3 = document.createElement('h3');
+       h3.textContent = restaurant.name;
+
+       const rate = document.createElement('span');
+       rate.textContent = "Rating: " + restaurant.rating;
+       rate.classList.add('rating');
+
+       Card_header.appendChild(h3);
+       Card_header.appendChild(rate);
+
+       const Card_footer = document.createElement('div');
+       Card_footer.classList.add('card-footer');
+       
+       const food = document.createElement('span');
+       food.textContent = restaurant.food_type;
+
+       const price = document.createElement('span');
+       price.textContent = "₹"+restaurant.price_for_two;
+
+       Card_footer.appendChild(food);
+       Card_footer.appendChild(price);
+       const card_location = document.createElement('div');
+    card_location.classList.add('card-location');
+ 
+    const location = document.createElement('span');
+    location.textContent = restaurant.location;
+
+    const distance = document.createElement('span');
+    distance.textContent = restaurant.distance_from_Customer_house+"km";
+    
+
+    card_location.appendChild(location);
+    card_location.appendChild(distance);
+
+
+    Card_content.appendChild(Card_header);
+    Card_content.appendChild(Card_footer);
+    Card_content.appendChild(card_location);
+
+
+    card.appendChild(image);
+    card.appendChild(Card_content);
+
+    root.appendChild(card);
+    
+    });
+  }
+
+  getrestaurant(restaurants);
+
+
+document.getElementById("serve").addEventListener('click',()=>{
+    
+    const result = restaurants.filter((obj)=>obj.alcohol);
+    document.getElementById('root').replaceChildren();
+    getrestaurant(result);
+
+})
+
+document.getElementById("rating").addEventListener('click',()=>{
+    
+    const result = restaurants.filter((obj)=>obj.rating>4.5);
+    document.getElementById('root').replaceChildren();
+    getrestaurant(result);
+
+})
+
+document.getElementById('filter').addEventListener('click',()=>{
+    document.getElementById("filterPopup").classList.remove("hidden");
+})
+
+
+document.getElementById('applyFilter').addEventListener('click',()=>{
+   
+    const element = document.querySelector('input[name="filterOption"]:checked');
+    const answer = element.value;
+
+    if(answer==="Rating"){
+        restaurants.sort((a,b)=>b.rating-a.rating);
+    }
+    else if(answer==="highLow"){
+        restaurants.sort((a,b)=>b.price_for_two-a.price_for_two);
+    }
+    else if(answer==="costLowHigh"){
+        restaurants.sort((a,b)=>a.price_for_two-b.price_for_two);
+    }
+    else if(answer==="distance"){
+        restaurants.sort((a,b)=>a.distance_from_Customer_house-b.distance_from_Customer_house);
+    }
+
+
+    document.getElementById('root').replaceChildren();
+    document.getElementById("filterPopup").classList.add("hidden");
+    getrestaurant(restaurants);
+})

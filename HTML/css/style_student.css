@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.conatiner{
+    background-color: beige;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: grey 2px 2px ;
+}
+.name{
+    font-size:x-large;
+    font-weight: bold;
+}
+.user{
+    font-size: small;
+    color: rgb(87, 86, 86);
+}
+.find{
+    width: 250px;
+    height: 15px;
+}
+button{
+    background-color: rgb(235, 175, 97);
+    color: aliceblue;
+    text-align: center;
+    width: 260px;
+    height: 25px;
+    border:2px;
+    border-radius: 5px;
+}
+.find{
+    border-radius: 5px;
+    border-style: groove;
+}
+button:active {
+    background-color: #0056b3;  
+    color: white;
+    transform: scale(1);     
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2) inset;
+}

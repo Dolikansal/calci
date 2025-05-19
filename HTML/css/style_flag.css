@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+#first, #third{
+   display: inline-block;
+   height: 40vh;
+   width: 25vw;
+   background-color: red;
+}
+#second, #forth{
+    display: inline-block;
+    height: 40vh;
+    width: 60vw;
+    background-color: red;
+ }
+ #forth , #second{
+    margin-left: 15vw;
+ }
+ #forth, #third{
+    margin-top: 20vw;
+ }

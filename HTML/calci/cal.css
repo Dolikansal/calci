@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(103, 100, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    text-align: center;
+    background-color:wheat;
+    border-style: solid;
+    border-color: rgb(222, 123, 123);
+    border-width: 2px;
+    border-radius: 15px;
+    /* width: 30vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num{
+    padding-bottom: 20px;
+}
+#number1,#number2{
+    border-radius: 7px;
+    margin: 15px;
+    /* text-wrap-mode:wrap; */
+
+}
+#button,#multi {
+    border-radius: 8px;
+    /* height: 35px; */
+    /* width: 70px; */
+    box-shadow: 5px;
+    margin-bottom: 30px;
+    margin: 5px;
+    box-shadow: 0 9px #999;
+}
+#result{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #666;
+}
+button:active{
+    /* box-shadow: 0 2px #666; */
+    transform: translateY(4px);
+}

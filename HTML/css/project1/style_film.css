@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+}
+.first{
+    display: flex;
+    background-color: rgb(233, 55, 55);
+    padding: 15px;
+    justify-content: space-between;
+}
+.name{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: auto;
+}
+.movies,.Events, .Supports, .more{
+    background-color:rgb(233, 55, 55) ;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight:500;
+    cursor: pointer;
+}
+.second{
+    background-color: rgb(181, 171, 171);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.bar,button{
+    background-color:rgb(233, 55, 55) ;
+    color: white;
+    border-radius: 5px;
+    border: black;
+    font-weight: 500;
+    margin-left: 5px;
+    font-size: 500;
+}
+.search{
+    border-radius: 5px;
+    width: 250px;
+}
+.special{
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.images{
+    display:flex;
+    overflow: scroll;
+}
+.card{
+    border: 0.5rem solid rgb(208, 199, 199);
+    background-color:rgb(208, 199, 199);
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+@media (max-width:500px) {
+    .first{
+        flex-direction: column;
+        align-items: center;
+    }
+    .moves{
+        display: flex; 
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .images , .second{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
