@@ -1,37 +1,35 @@
-const button = document.querySelector('#button');
-button.addEventListener('click', (event) => {
-    // Prevent default form submission
-    event.preventDefault();
+let input = document.getElementById('inputbox');
+let buttons = document.querySelectorAll('button');
 
-    // Read the data
-    const input1 = document.getElementById('number1');
-    const number1 = Number(input1.value);
-
-    const input2 = document.getElementById('number2');
-    const number2 = Number(input2.value);
-
-    if (isNaN(number1) || isNaN(number2)) {
-        alert('Please enter valid numbers!');
-        return;
-    }
-
-    // Output the result
-    const result = number1 + number2;
-    const re = document.getElementById('result');
-    re.textContent = "Result: " + result;
-});
-const b=document.getElementById('multi');
-// button.getElementById('multi');
-b.addEventListener('click',(event)=>{
-    event.preventDefault();
-    const input1=document.getElementById('number1');
-    const number1= Number(input1.value);
-    const input2=document.getElementById('number2');
-    const number2= Number(input2.value);
-    if(isNaN(number1) || isNaN(number2)){
-        return;
-    }
-    const result =number1*number2;
-    const re = document.getElementById('result');
-    re.textContent = "Result: "+result;
-});
+let string = "";
+Array.from(buttons).forEach(button => {
+    button.addEventListener('click', (e) => {
+        const value = e.target.innerHTML;
+        if(value === '='){
+            try{
+                string = eval(string);
+                input.value = string;
+            }
+            catch{
+                input.value = 'ERROR';
+            }
+        }
+        else if(value === 'Ac'){
+            string = "";
+            input.value = string;
+        }
+        else if(value === 'del'){
+            string = string.slice(0, -1);
+            input.value = string;
+        }
+        else if (value === '+/-') {
+            if (string) {
+                string = String(-1 * parseFloat(string));
+                input.value = string;
+            }
+        } else {
+            string += value;
+            input.value = string;
+        }
+    })
+}) 
