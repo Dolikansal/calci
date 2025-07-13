@@ -1,16 +1,20 @@
-public class try_catch{
-    public static void main(String[] args) {
-        int num1 = 15;
-        int num2 = 0;
-        int ans ;
+import java.util.Scanner;
+public class try_catch {
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in);
+        int a = 15;
+        int b = sc.nextInt();
+
         try{
-            ans = num1 / num2;
-            System.out.println("result is: " + ans);
+            int ans = a/b;
+            System.out.println(ans);
         }
-        catch(ArithmeticException e){
-            System.out.println("Error => cant divide by zero");
+        catch(Exception e){
+            System.out.println(e.getMessage());
         }
 
-        System.out.println("continue.....");
+        finally{
+            System.out.println("i will execute");
+        }
     }
 }
